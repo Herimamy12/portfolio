@@ -1,68 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Herimamy Naval</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Développeur C/C++ et Web - Herimamy Naval</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-	<header class="header">
-		<div id="divHeader">
-			<h1 class="headerTitle">My PortFolio</h1>
-			<nav class="navHeader">
-				<a href="index.html#divHeader">Home</a>
-				<a href="index.html#divAbout">About</a>
-				<a href="index.html#divProject">Project</a>
-				<a href="index.html#divFooter">Contact</a>
-			</nav>
-		</div>
-	</header>
-	<article class="main">
-		<div id="divAbout">
-			<img src="img/profil.png" alt="naval">
-			<h2>Hello Guys, my name is Herimamy Naval</h2>
-			<p>
-				I am an apprentice web developer and student at the school 42 in Tana. Welcome in to my portfolio
-			</p>
-		</div>
-		<div id="divProject">
-			<h2>My Project</h2>
-			<div id="divSolong">
-				<h3>So_long</h3>
-				<p>
-					So_long is a mini-game made during the second milestone of school 42.
-				</p>
-				<img src="img/solong.jpg" alt="so long" width="500" height="250">
-			</div>
-			<div id="divPushswap">
-				<h3>Push Swap</h3>
-				<p>
-					This is a program that sorts in ascending order a list of integers given as parameters.
-				</p>
-				<img src="img/push_swap.jpg" alt="push swap" width="500" height="250">
-			</div>
-			<div id="divMinitalk">
-				<h3>Minitalk</h3>
-				<p>
-					This project is a simple client-server communication system implemented using signals in C.
-				</p>
-				<img src="img/minitalk.jpg" alt="minitalk" width="500" height="250">
-			</div>
-		</div>
-	</article>
-	<footer class="footer">
-		<div id="divFooter">
-			<fieldset>
-				<legend>Contact me via</legend>
-				<p>facebook : Herimamy Naval</p>
-				<p>Linkedin : Herimaminavalona Prosper</p>
-				<p>Email : herimaminavalonaprosper@gmail.com</p>
-			</fieldset>
-		</div>
-		<div id="divCopyright">
-			<p>copyright naval 2024</p>
-		</div>
-	</footer>
+    <!-- Section Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Herimamy Naval</h1>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="home" class="hero" style="background-image: url('./img/5073414.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2>Bonjour, je suis Herimamy Naval</h2>
+            <p>Développeur C/C++ et développeur web spécialisé en JavaScript.</p>
+            <a href="#projects" class="cta-button">Voir mes projets</a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <img src="./img/nherimam.jpg" alt="Herimamy Naval" class="profile-pic">
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>Je suis un développeur C/C++ et développeur web passionné avec une expérience en JavaScript. J'adore créer des sites web modernes, fonctionnels et esthétiques. Mon objectif est d'aider les entreprises à améliorer leur présence en ligne.</p>
+                <blockquote class="quote">"Innover pour des solutions web efficaces et esthétiques."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-filter">
+                <button class="filter-btn" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="c">C/C++</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="c">
+                    <img src="./img/minishell.jpeg" alt="Projet 1" loading="lazy">
+                    <h3>Minishell</h3>
+                    <p>Le projet Minishell consiste à développer un petit shell Unix fonctionnel qui émule certaines fonctionnalités d'un shell de base, comme bash. L'objectif est de comprendre en profondeur le fonctionnement des shells Unix en manipulant les processus, les descripteurs de fichiers, les signaux et l'exécution de commandes via la programmation système en C.</p>
+                    <a href="https://github.com/Herimamy12/minishel" target="_blank">Voir le projet</a>
+                </div>
+                <div class="project-card" data-category="c">
+                    <img src="./img/solong.png" alt="Projet 2" loading="lazy">
+                    <h3>So long</h3>
+                    <p>Le projet So Long consiste à développer un jeu vidéo en 2D en utilisant le langage C et la bibliothèque graphique MiniLibX. Ce projet vise à renforcer les compétences en programmation événementielle, en manipulation de la mémoire et en gestion de la fenêtre graphique, tout en introduisant les bases du développement de jeux vidéo.</p>
+                    <a href="https://github.com/Herimamy12/so_long" target="_blank">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <ul>
+                <li><i class="fas fa-code"></i> HTML5</li>
+                <li><i class="fas fa-code"></i> CSS3</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node"></i> Node.js</li>
+                <li><i class="fas fa-database"></i> API REST</li>
+                <li><i class="fas fa-laptop-code"></i> Langage C</li>
+                <li><i class="fas fa-laptop-code"></i> Langage C++</li>
+                <li><i class="fas fa-terminal"></i> Shell Unix</li>
+                <li><i class="fas fa-database"></i> MySQL</li>
+                <li><i class="fab fa-php"></i> PHP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact" style="background-image: url('./img/5073414.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Pour toute demande de collaboration ou question, n'hésite pas à me contacter via ce formulaire.</p>
+            <form action="#" method="POST">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Herimamy Naval. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
