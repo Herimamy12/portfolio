@@ -33,16 +33,15 @@ npm run dev
 
 **Exemple :**
 ```link
-[localhost:](http://localhost:5173/)
+http://localhost:5173/
 ```
 
 ## Technologies utilisées
 
-- HTML
-- CSS
-- JavaScript
-- React (si applicable)
-- Node.js (si applicable)
+- TypeScript
+- React.js
+- Node.js
+- Vue.js
 
 ## Auteur
 - [Herimamy12](https://github.com/Herimamy12)
